@@ -5,11 +5,7 @@ Movie Booking Web Application🎬
 I’ve built a fully responsive movie app inspired by platforms like Netflix and BookMyShow. This application allows users to search for movies and view detailed information in real time using live API integration.
 ---
 
-🔹 Key Features:
-🔍 Search and explore movies dynamically
-🎥 View movie details including rating, release date, and overview
-🎟️ Real-time seat selection and ticket booking simulation
-💳 Payment flow with validation for a complete user experience
+
 🔹 Tech Stack:
 HTML
 CSS
@@ -22,12 +18,12 @@ This project helped me strengthen my frontend development skills, especially in 
 
 ## 🚀 Features
 
-* 🔍 Search movies in real-time
-* ⏳ Loading indicator while fetching data
-* 🌗 Light / Dark theme toggle
-* 📱 Responsive design (mobile-friendly)
-* 🎬 Dynamic movie results display
-* ⚡ Fast performance using React Hooks
+🔍 Search and explore movies dynamically 
+🎥 View movie details including rating, release date, and overview 
+🎟️ Real-time seat selection and ticket booking simulation 
+💳 Payment flow with validation for a complete user experience 
+
+🔹 API Integration: Utilized The Movie Database (TMDB) API to fetch real-time movie data. This project helped me strengthen my frontend development skills, especially in React, API handling, and UI/UX design.
 
 ---
 
