@@ -3,6 +3,8 @@
 ## 📌 Project Overview
 Movie Booking Web Application🎬
 I’ve built a fully responsive movie app inspired by platforms like Netflix and BookMyShow. This application allows users to search for movies and view detailed information in real time using live API integration.
+---
+
 🔹 Key Features:
 🔍 Search and explore movies dynamically
 🎥 View movie details including rating, release date, and overview
