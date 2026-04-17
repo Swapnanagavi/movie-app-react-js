@@ -1,0 +1,28 @@
+/* Global App Styles */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.app.dark {
+  background: linear-gradient(to bottom, #000000, #581c87, #170224);
+  color: white;
+}
+
+.app.light {
+  background: linear-gradient(to bottom, #ffffff, #fdf2f8);
+  color: black;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

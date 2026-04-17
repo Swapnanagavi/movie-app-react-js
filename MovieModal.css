@@ -1,0 +1,146 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  max-width: 320px;
+  width: 90vw;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content.dark {
+  background: #241235;
+}
+
+.modal-content.light {
+  background: white;
+}
+
+@media (min-width: 640px) {
+  .modal-content {
+    max-width: 448px;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close.dark {
+  color: #f8fafc;
+}
+
+.modal-close.light {
+  color: #ec4899;
+}
+
+.modal-close:hover {
+  color: #be185d;
+}
+
+.modal-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.modal-title.dark {
+  color: white;
+}
+
+.modal-title.light {
+  color: #111827;
+}
+
+.modal-poster {
+  margin-bottom: 12px;
+  border-radius: 12px;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.modal-release {
+  margin-bottom: 8px;
+}
+
+.modal-release.dark {
+  color: #fdf2f8;
+}
+
+.modal-release.light {
+  color: rgba(17, 24, 39, 0.9);
+}
+
+.modal-label {
+  font-weight: bold;
+}
+
+.modal-overview {
+  margin-bottom: 8px;
+  margin-top: 4px;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.modal-overview.dark {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fdf2f8;
+}
+
+.modal-overview.light {
+  background: rgba(243, 244, 246, 0.7);
+  color: #111827;
+}
+
+.book-btn {
+  margin-top: 15px;
+  padding: 14px 28px;
+  background-color: red;
+  font-size: 18px;
+  min-width: 200px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background-color: darkred;
+}
+button {
+  background-color: green;
+  color: black;
+  margin-top: 15px;
+  padding: 14px 28px;
+  background-color: red;
+  font-size: 18px;
+  min-width: 200px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}

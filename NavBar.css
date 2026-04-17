@@ -1,0 +1,137 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 32px 12px 32px;
+  border-bottom: 1px solid rgba(236, 72, 153, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+}
+
+.navbar.dark {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.navbar.light {
+  background: rgba(249, 250, 251, 0.9);
+}
+
+@media (min-width: 640px) {
+  .navbar {
+    flex-direction: row;
+    padding: 12px 32px;
+  }
+}
+
+.navbar-logo {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.6rem, 8vw, 2.25rem);
+  letter-spacing: -0.02em;
+}
+
+.navbar-search-form {
+  width: 100%;
+  max-width: 448px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 50px;
+  padding: 8px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.navbar.dark .search-container {
+  background: #22172a;
+}
+
+.search-container:focus-within {
+  border-color: #f472b6;
+  box-shadow: 0 0 0 1px #f472b6 inset;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #f472b6;
+  margin-right: 8px;
+  opacity: 0.8;
+}
+
+.search-input {
+  background: transparent;
+  flex-grow: 1;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  border: none;
+}
+
+.navbar.dark .search-input {
+  color: white;
+}
+
+.search-input::placeholder {
+  color: #f472b6;
+}
+
+.navbar.dark .search-input::placeholder {
+  color: #fbbf24;
+}
+
+.clear-button {
+  margin-left: 8px;
+  color: #ec4899;
+  font-weight: bold;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.clear-button:hover {
+  color: #be185d;
+}
+
+.theme-toggle {
+  font-size: 32px;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid #fce7f3;
+  background: rgba(252, 231, 243, 0.7);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-left: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar.dark .theme-toggle {
+  border-color: #be185d;
+  background: rgba(190, 24, 93, 0.3);
+}
+
+@media (min-width: 640px) {
+  .theme-toggle {
+    margin-left: 16px;
+  }
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+}

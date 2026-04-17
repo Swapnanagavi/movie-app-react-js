@@ -1,0 +1,123 @@
+.trending-section {
+  margin-bottom: 32px;
+  padding: 0 8px;
+  width: 100%;
+}
+
+.trending-title {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d1d5db;
+  padding-bottom: 4px;
+}
+
+.trending-title.dark {
+  border-bottom-color: #374151;
+}
+
+@media (min-width: 768px) {
+  .trending-title {
+    font-size: 20px;
+  }
+}
+
+.trending-container {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.trending-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .trending-container {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .trending-container {
+    gap: 32px;
+  }
+}
+
+.trending-item {
+  position: relative;
+  flex-shrink: 0;
+  min-width: 120px;
+  max-width: 140px;
+}
+
+.trending-number {
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 900;
+  font-size: 48px;
+  z-index: 10;
+  user-select: none;
+  filter: drop-shadow(0 6px 10px rgba(212, 25, 184, 0.733));
+}
+
+.trending-number.dark {
+  color: white;
+}
+
+.trending-number.light {
+  color: black;
+}
+
+@media (min-width: 640px) {
+  .trending-number {
+    font-size: 64px;
+  }
+}
+
+.trending-poster-container {
+  border-radius: 16px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.trending-poster {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: all 0.15s ease;
+  box-shadow: none;
+}
+
+@media (min-width: 640px) {
+  .trending-poster {
+    width: 140px;
+    height: 210px;
+  }
+}
+
+.trending-item:hover .trending-poster-container {
+  box-shadow: 0 0 20px 5px rgba(212, 25, 184, 0.733);
+}
+
+.trending-item:hover .trending-poster {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Light theme hover effect */
+.trending-item:hover .trending-poster-container {
+  box-shadow: 0 0 12px 4px rgba(251, 191, 36, 0.533);
+}
